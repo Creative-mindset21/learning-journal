@@ -16,6 +16,8 @@
 
 body {
   color: #141414;
+  height: 100vh;
+  max-width: 100%;
 }
 
 header,
@@ -150,7 +152,7 @@ nav ul li:hover::before {
 .blog-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .blog {
@@ -161,6 +163,13 @@ nav ul li:hover::before {
   background-color: #f5f3f4;
   border-radius: 10px;
   padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.blog:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .blog h2 {
@@ -175,6 +184,7 @@ nav ul li:hover::before {
 }
 
 /** VIEW MORE SECTION */
+
 .view-more {
   display: flex;
   align-items: center;
@@ -189,4 +199,82 @@ nav ul li:hover::before {
 
 .view-more a:hover {
   text-decoration: underline;
+}
+
+/** FOOTER SECTION */
+footer {
+  background: #202020;
+  padding: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+footer h3 {
+  font-size: 1rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+@media (max-width: 499px) {
+  /* ! DEFAULT CSS */
+
+  header,
+  .main {
+    padding: 1rem;
+  }
+
+  /* ! HEADER SECTION */
+
+  .logo {
+    gap: 5px;
+  }
+
+  .logo span {
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  .logo img {
+    width: 30px;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  /* ! HERO SECTION CSS */
+
+  .hero-section {
+    padding-top: 5%;
+    height: 35vh;
+  }
+
+  .text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .content {
+    max-width: 755px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  /* ! BLOG SECTION CSS */
+
+  .blog-section {
+    justify-items: center;
+  }
+
+  .blog {
+    width: 300px;
+    height: 400px;
+  }
 }
