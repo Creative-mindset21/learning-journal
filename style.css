@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* RESET TO DEFAULT */
+/** RESET TO DEFAULT */
 *,
 *::before,
 *::after {
@@ -12,17 +12,29 @@
   list-style: none;
 }
 
+/** DEFAULT CSS  */
+
 body {
   color: #141414;
 }
 
-/* HEADER SECTION CSS */
+header,
+.main {
+  padding: 1rem 4rem;
+}
+
+.time {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/** HEADER SECTION CSS */
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 4rem;
 }
 
 .logo {
@@ -72,4 +84,27 @@ nav ul li::before {
 
 nav ul li:hover::before {
   transform: scale(1);
+}
+
+/** HERO SECTION */
+.hero-section {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/hero-img.jpeg) no-repeat center bottom;
+  background-size: cover;
+  height: 60vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-top: 15%;
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content {
+  max-width: 755px;
+  line-height: 1.5;
 }
