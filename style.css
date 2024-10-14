@@ -138,3 +138,20 @@ nav ul li:hover::before {
   object-fit: cover;
   border-radius: 10px;
 }
+
+/** VIEW MORE SECTION */
+.view-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 3rem;
+}
+
+.view-more a {
+  color: #000;
+  font-weight: 700;
+}
+
+.view-more a:hover {
+  text-decoration: underline;
+}
