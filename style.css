@@ -10,7 +10,6 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  overflow-x: hidden;
 }
 
 /** DEFAULT CSS  */
@@ -19,6 +18,7 @@ body {
   color: #141414;
   height: 100vh;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 header,
