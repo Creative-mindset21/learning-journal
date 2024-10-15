@@ -10,6 +10,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  overflow-x: hidden;
 }
 
 /** DEFAULT CSS  */
@@ -39,7 +40,7 @@ header {
   justify-content: space-between;
 }
 
-.logo {
+.logo a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,6 +50,7 @@ header {
 .logo span {
   font-weight: 600;
   font-size: 1.1rem;
+  color: #000;
 }
 
 .logo img {
@@ -168,7 +170,7 @@ nav ul li:hover::before {
 }
 
 .blog:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -181,24 +183,6 @@ nav ul li:hover::before {
   width: 80%;
   object-fit: cover;
   border-radius: 10px;
-}
-
-/** VIEW MORE SECTION */
-
-.view-more {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 0 3rem;
-}
-
-.view-more a {
-  color: #000;
-  font-weight: 700;
-}
-
-.view-more a:hover {
-  text-decoration: underline;
 }
 
 /** FOOTER SECTION */
