@@ -18,11 +18,16 @@ body {
   color: #141414;
   height: 100vh;
   max-width: 100%;
+  background-color: #fafafa;
 }
 
 header,
+.image {
+  padding: 2rem 6rem;
+}
+
 .main {
-  padding: 2rem 4rem;
+  padding: 2rem 10vw;
 }
 
 /** HEADER SECTION CSS */
@@ -31,6 +36,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
 }
 
 .logo {
@@ -80,4 +86,103 @@ nav ul li::before {
 
 nav ul li:hover::before {
   transform: scale(1);
+}
+
+/* ! TEXT SECTION CSS */
+
+.text h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.content {
+  max-width: 755px;
+  line-height: 1.5;
+  margin-bottom: 1.4rem;
+}
+
+/* ! IMAGE SECTION CSS */
+.image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 700px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+/* ! INFO SECTION */
+
+.info p {
+  max-width: 1400px;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+.info h2 {
+  margin: 1rem 0;
+}
+
+/*! BLOG SECTION */
+
+.blog-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.blog {
+  width: 370px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.blog h2 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.blog img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.recent {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.time {
+  margin: 10px 0;
+}
+
+/*! FOOTER SECTION */
+footer {
+  background: #202020;
+  padding: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+footer h3 {
+  font-size: 1rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+  font-weight: 400;
 }
