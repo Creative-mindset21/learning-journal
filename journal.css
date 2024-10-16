@@ -14,6 +14,10 @@
 }
 
 /** DEFAULT CSS  */
+html,
+body {
+  overflow-x: hidden;
+}
 
 body {
   color: #141414;
@@ -242,7 +246,7 @@ footer p {
   }
 
   .content {
-    max-width: 755px;
+    max-width: 100%;
     font-size: 0.8rem;
     line-height: 1.5;
     margin-bottom: 1rem;
@@ -251,8 +255,12 @@ footer p {
   /* ! BLOG SECTION CSS */
 
   .blog-section {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(100%, 1fr)
+    ); /* Ensure full width */
     justify-items: center;
-    gap: 3rem;
+    gap: 3rem; /* Adjust gap for smaller screens */
     margin-bottom: 3rem;
   }
 

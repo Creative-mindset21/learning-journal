@@ -15,20 +15,25 @@
 
 /** DEFAULT CSS  */
 
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   color: #141414;
   height: 100vh;
-  max-width: 100%;
   background-color: #fafafa;
 }
 
 header,
 .image {
-  padding: 2rem 6rem;
+  padding: 2rem 6%;
 }
 
 .main {
-  padding: 2rem 10vw;
+  padding: 2rem 5%;
 }
 
 /** HEADER SECTION CSS */
@@ -146,7 +151,8 @@ nav ul li:hover::before {
 }
 
 .blog {
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   height: 450px;
   display: flex;
   flex-direction: column;
@@ -193,4 +199,62 @@ footer h3 {
 footer p {
   font-size: 0.8rem;
   font-weight: 400;
+}
+
+@media (max-width: 499px) {
+  /* ! DEFAULT CSS */
+
+  header,
+  .main {
+    padding: 1rem;
+  }
+
+  /* ! HEADER SECTION */
+
+  .logo {
+    gap: 5px;
+  }
+
+  .logo span {
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  .logo img {
+    width: 30px;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text h2 {
+    font-size: 1.5rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  /* ! BLOG SECTION CSS */
+  .blog-section {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(90%, 1fr)
+    ); /* Ensure full width */
+    gap: 1rem; /* Adjust gap */
+    margin-bottom: 3rem;
+  }
+
+  .blog {
+    width: 100%; /* Full width */
+    max-width: none; /* Remove max width restriction */
+    height: auto; /* Allow flexible height */
+    padding: 1rem; /* Reduce padding */
+  }
 }
